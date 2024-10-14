@@ -1,0 +1,21 @@
+* {
+  text-decoration: underline;
+}
+h1 {
+  color: blue;
+}
+.vermelho {
+  color: pink;
+}
+.grande {
+  font-size: 64px;
+}
+#titulo {
+  color: green;
+  transform: rotate(-45deg);
+}
+#bola {
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+}
