@@ -1,21 +1,75 @@
 * {
-  text-decoration: underline;
+  box-sizing: border-box;
 }
-h1 {
-  color: blue;
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
-.vermelho {
-  color: pink;
-}
-.grande {
-  font-size: 64px;
-}
-#titulo {
-  color: green;
-  transform: rotate(-45deg);
-}
-#bola {
+
+svg {
   width: 200px;
+}
+
+.forca,
+.corda,
+.cabeca,
+.no,
+.corpo,
+.braco-esquerdo,
+.braco-direito,
+.perna-esquerda,
+.perna-direita {
+  display: none;
+}
+
+#word {
+  display: flex;
+  gap: 10px;
+}
+
+.letter {
+  width: 50px;
   height: 100px;
-  background-color: yellow;
+  border-bottom: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#alfabeto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#alfabeto div {
+  width: 50px;
+  height: 50px;
+  background-color: lightsalmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alfabeto div.palpitada,
+#alfabeto div.palpitada:hover,
+#alfabeto div.palpitada:active {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: lightslategray;
+}
+
+#alfabeto div:hover {
+  background-color: peru;
+  cursor: pointer;
+}
+
+#alfabeto div:active {
+  background-color: darkred;
 }
